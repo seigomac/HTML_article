@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="プログラミングが学習サービスのドットインストールです。">
+    <title>Document</title>
+</head>
+<body>
+    <h1>記事一覧</h1>
+
+    <article>
+            <h1><span style="color : gray">おはようございます。</span></h1>
+        <div style="background: silver;" >
+            <p>初登校です。初登校です。初登校です。</p>
+            <footer>投稿日:<time>2021-01-18</time>by @seigo </footer>
+        </div>
+     </article>
+
+     <article>
+            <h1><span style="color: gray">こんにちは</span></h1>
+
+        <div style="background: silver;">
+            <p>今日もいい天気ですね。初登校です。初登校です。</p>
+            <footer>投稿日:<time>2021-01-19</time>by @seigo </footer>
+        </div>
+     </article>
+
+     <section>
+        <div>
+            <h1>アンケート</h1>
+            <p>
+                <label>好きな食べ物
+                    <select id="color">
+                        <option>和食</option>
+                        <option>洋食</option>
+                        <option>フレンチ</option>
+                        <option>中華</option>
+                    </select>
+                </label>
+            </p>
+        </div>
+        <div>
+            <p>
+                <fieldset>
+                    <legend>OS(複数選択可能)</legend>
+                    <label><input type="checkbox">Windows</label>
+                    <label><input type="checkbox">MacOS</label>
+                    <label><input type="checkbox">Linux</label>
+                </fieldset>
+            </p>
+        </div>
+        <div>
+            <p>
+                <fieldset>
+                    <legend>好きな服のブランド</legend>
+                    <label><input type="radio" name="cloth">ユニクロ</label>
+                    <label><input type="radio" name="cloth">GU</label>
+                    <label><input type="radio" name="cloth">Beauty and Youth</label>
+                </fieldset>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <form action="process.php" method="post">
+                    <label>担当者 <input type-"text" name="username"></label>
+                    <label>内容 <input type="text" name="contents"></label>
+                    <button>追加</button>
+                </form>
+            </p>
+        </div>
+
+          <!-- ↑追加ボタンを入力するとinputタグの中身が、.phpファイルにPOST系kしいで送信 -->
+
+
+
+     </section>
+
+        <h1>css練習画面リンク</h1>
+        <ul>
+            <li>
+                <a href="csspractice.html" target="_blank">CSSPractice</a>
+            </li>
+        </ul>
+
+
+
+     <section>
+         <h1>ログイン</h1>
+
+         <label for="name">名前</label>
+        <input type="text" placeholder="名前" id="name">
+
+        <label for="pass">パスワード</label>
+        <input type="password" placeholder ="パスワード" id="pass">
+
+        <h2>お問い合わせ</h2>
+        <label for="question">質問・要望</label>
+        <input type="text" id="question">
+<!--
+        <label for="comment">コメント欄</label>
+        <textarea name="ご自由に記述してください" id="comment"></textarea> -->
+
+        <label>コメント欄<textarea></textarea></label>
+
+     </section>
+
+
+</body>
+</html>
